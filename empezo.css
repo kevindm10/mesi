@@ -1,0 +1,85 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.prev-arrow,
+.next-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.prev-arrow {
+    left: 10px;
+}
+
+.next-arrow {
+    right: 10px;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega sombra a los slides */
+}
+
+img {
+    max-width: 30%;
+    height: auto;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Agrega sombra a las imágenes */
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+body {
+    background: linear-gradient(
+        180deg,
+        rgba(204, 204, 204, 1) 0%,
+        rgba(238, 238, 238, 1) 50%,
+        rgba(204, 204, 204, 1) 100%
+    );
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 50vh;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding: 0 20px;
+    text-transform: capitalize;
+    color: #222222;
+    font-size: 18px;
+}
+
+.element {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.element img {
+    max-width: 15%;
+    height: auto;
+    position: relative;
+    top: 10px; /* Ajusta el valor para incrustar la imagen */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Agrega sombra a la imagen */
+}
+
+.slide {
+    margin-top: 40px; /* Corrige el error en la propiedad margin */
+}
